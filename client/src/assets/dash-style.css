@@ -1,0 +1,148 @@
+/*Regular Dashboard*/
+
+.main-content-dashboard {
+    width: 92%;
+    padding: 25px 25px 0px;
+    position: absolute;
+    z-index: 100;
+    left: 8%;
+    background-color: white;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden !important;
+}
+
+.filters-wrapper {
+    margin-bottom: 0px;
+}
+
+.side-section {
+    width: 8%;
+}
+
+.side-section-bottom {
+    bottom: 10px;
+}
+
+.gauge-box {
+    min-height: 180px;
+    width: 25%;
+    padding: 3px;
+    /* margin-bottom: 1%; */
+    border-right: 1px solid #c5c9ff;
+}
+
+.gauge-box:last-child {
+    border: none;
+}
+
+.gauge-box-middle {
+    min-height: 255px;
+    width: 33%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border-right: 1px solid #c5c9ff;
+}
+
+.gauge-box-middle:last-child {
+    border: none;
+}
+
+
+@media(max-width:1900px){
+    .main-content-dashboard {
+        width: 91%;
+        padding: 25px 25px 0px;
+        position: absolute;
+        z-index: 100;
+        left: 9%;
+        background-color: white;
+        margin: 0;
+        height: 100%;
+        overflow-x: hidden !important;
+    }
+
+    .side-section {
+        width: 9%;
+    }
+
+    .side-section-bottom {
+        bottom: 10px;
+    }
+
+    .gauge-box {
+        min-height: 180px;
+        width: 25%;
+        padding: 3px;
+        /* margin-bottom: 1%; */
+        border-right: 1px solid #c5c9ff;
+    }
+
+    .gauge-box:last-child {
+        border: none;
+    }
+
+    .gauge-box-middle {
+        min-height: 255px;
+        width: 33%;
+        padding: 3px;
+        margin-bottom: 10px;
+        border-right: 1px solid #c5c9ff;
+    }
+
+    .gauge-box-middle:last-child {
+        border: none;
+    }
+
+}
+
+@media(max-width:990px){
+    .logo {
+        transform: scale(0.8);
+    }
+}
+
+/*Dynamic Dashboard*/
+
+
+.dynamic-gauge-box {
+    min-height: 350px;
+    width: 25%;
+    padding: 3px;
+    /* margin-bottom: 1%; */
+    border-right: 1px solid #c5c9ff;
+}
+
+.dynamic-gauge-box-middle {
+    min-height: 345px;
+    width: 33%;
+    margin-bottom: 10px;
+    padding: 3px;
+    border-right: 1px solid rgb(197, 201, 255);
+}
+
+.dynamic-grey-box{
+    padding: 1px;
+    border: 3px solid #F1F3F9;;
+    background-color: #F1F3F9;
+    margin: -25px;
+    text-align: center;
+    color: white;
+    position: relative;
+
+}
+
+
+.dynamic-gauge-box-text {
+    text-align: center;
+    display: block !important;
+    margin-top: 27%;
+}
+
+
+.dynamic-page-subtitle {
+    color: #172B4D;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}

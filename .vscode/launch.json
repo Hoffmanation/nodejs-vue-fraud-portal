@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "node",
+            "request": "launch",
+            "envFile": "${workspaceFolder}/server/.env",
+            "name": "Node Server",
+            "runtimeExecutable": "npm",
+            "cwd": "${workspaceRoot}/server",
+            "program": "${workspaceFolder}/server/app.js",
+            "port": 9229,
+            "runtimeArgs": [
+                "run", "dev"
+            ]
+        }, 
+    ]
+
+
+}

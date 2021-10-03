@@ -1,0 +1,424 @@
+{
+  "fields": {
+    "score": {
+      "label": "score",
+      "analyst": true,
+      "developer": false
+    },
+    "paymentMethod": {
+      "label": "paymentMethod renamed",
+      "analyst": true,
+      "developer": true,
+      "fields": {
+        "payment": {
+          "label": "payment renamed",
+          "analyst": true,
+          "developer": true,
+          "fields": {
+            "bankAccountDetails": {
+              "label": "bankAccountDetails renamed"
+            }
+          }
+        },
+        "billingAddress": {
+          "label": "billingAddress renamed",
+          "analyst": true,
+          "developer": true,
+          "fields": {}
+        },
+        "type": {
+          "label": "type renamed",
+          "analyst": true,
+          "developer": true,
+          "fields": {}
+        },
+        "user": {
+          "label": "user",
+          "analyst": true,
+          "developer": true,
+          "fields": {}
+        }
+      }
+    },
+    "amount": {
+      "label": "Amount",
+      "analyst": true,
+      "developer": false
+    },
+    "riskLevel": {
+      "label": "Risk Level",
+      "analyst": true,
+      "developer": true
+    },
+    "requestId": {
+      "label": "Request Id",
+      "analyst": true,
+      "developer": true
+    },
+    "sessionId": {
+      "label": "Session Id",
+      "analyst": true,
+      "developer": true
+    },
+    "destinationId": {
+      "label": "Destination Id",
+      "analyst": true,
+      "developer": true
+    },
+    "userId": {
+      "label": "User ID:",
+      "analyst": true,
+      "developer": true
+    },
+    "currencyCode": {
+      "label": "Currency Code",
+      "analyst": true,
+      "developer": true
+    },
+    "user": {
+      "label": "User",
+      "analyst": false,
+      "developer": false,
+      "fields": {
+        "phoneUser": {
+          "label": "Phone some text",
+          "analyst": true,
+          "developer": false
+        },
+        "isPhoneVerified": {
+          "label": "is Phone Verified",
+          "analyst": true,
+          "developer": false
+        },
+        "address": {
+          "label": "Address renamed",
+          "analyst": false,
+          "developer": false
+        },
+        "userId": {
+          "label": "User ID",
+          "analyst": true,
+          "developer": false
+        },
+        "email": {
+          "label": "Email",
+          "analyst": true,
+          "developer": false
+        },
+        "isEmailVerified": {
+          "label": "Email Verified",
+          "analyst": true,
+          "developer": true
+        }
+      }
+    },
+    "checkPointType": {
+      "label": "Checkpoint Type",
+      "analyst": true,
+      "developer": true
+    },
+    "transaction": {
+      "label": "Transaction Information",
+      "analyst": true,
+      "developer": true,
+      "fields": {
+        "transactionType": {
+          "label": "Transaction Type renamed",
+          "analyst": true,
+          "developer": true
+        },
+        "user": {
+          "label": "User in transaction renamed",
+          "analyst": false,
+          "developer": false,
+          "fields": {
+            "phoneUser": {
+              "label": "Phone some text",
+              "analyst": true,
+              "developer": false
+            },
+            "isPhoneVerified": {
+              "label": "is Phone Verified",
+              "analyst": true,
+              "developer": false
+            },
+            "address": {
+              "label": "Address renamed",
+              "analyst": false,
+              "developer": false
+            },
+            "userId": {
+              "label": "User ID",
+              "analyst": true,
+              "developer": false
+            },
+            "email": {
+              "label": "Email",
+              "analyst": true,
+              "developer": false
+            },
+            "isEmailVerified": {
+              "label": "Email Verified",
+              "analyst": true,
+              "developer": true
+            }
+          }
+        },
+        "amount": {
+          "label": "Amount",
+          "analyst": true,
+          "developer": true
+        },
+        "time_stamp": {
+          "label": "Timestamp",
+          "analyst": true,
+          "developer": true
+        },
+        "curType": {
+          "label": "Cur Type",
+          "analyst": true,
+          "developer": true
+        },
+        "shippingAddress": {
+          "label": "Shipping Address",
+          "analyst": true,
+          "developer": true,
+          "fields": {
+            "firstName": {
+              "label": "First Name",
+              "analyst": true,
+              "developer": true
+            },
+            "lastName": {
+              "label": "Last Name",
+              "analyst": true,
+              "developer": true
+            },
+            "country": {
+              "label": "Country",
+              "analyst": true,
+              "developer": true
+            },
+            "phoneNumber": {
+              "label": "Phone Number",
+              "analyst": true,
+              "developer": true
+            },
+            "city": {
+              "label": "City",
+              "analyst": true,
+              "developer": true
+            },
+            "postalCode": {
+              "label": "postal Code",
+              "analyst": true,
+              "developer": true
+            },
+            "addressLine1": {
+              "label": "address Line1",
+              "analyst": true,
+              "developer": true
+            },
+            "addressLine2": {
+              "label": "address Line2",
+              "analyst": true,
+              "developer": true
+            },
+            "state": {
+              "label": "State",
+              "analyst": true,
+              "developer": true
+            }
+          }
+        },
+        "authorizationResponse": {
+          "label": "AuthorizationResponse",
+          "analyst": true,
+          "developer": true,
+          "fields": {
+            "verificationStatus": {
+              "label": "verification Status",
+              "analyst": true,
+              "developer": true
+            },
+            "aVSResultCode": {
+              "label": "aVSResult Code",
+              "analyst": true,
+              "developer": true
+            },
+            "acquirerResponseCode": {
+              "label": "acquirer Response Code",
+              "analyst": true,
+              "developer": true
+            },
+            "acquirerResponseMessage": {
+              "label": "acquirer Response Message",
+              "analyst": true,
+              "developer": true
+            },
+            "declineReasonMessage": {
+              "label": "declineReason Message",
+              "analyst": true,
+              "developer": true
+            },
+            "threeDSResponseStatus": {
+              "label": "threeDSResponseStatus",
+              "analyst": true,
+              "developer": true
+            },
+            "declineReasonCode": {
+              "label": "declineReason Code",
+              "analyst": true,
+              "developer": true
+            },
+            "threeDSResponseECI": {
+              "label": "threeDSResponse ECI",
+              "analyst": true,
+              "developer": true
+            },
+            "threeDSResponseEnrolled": {
+              "label": "threeDSResponse Enrolled",
+              "analyst": true,
+              "developer": true
+            }
+          }
+        },
+        "payment": {
+          "label": "Payment",
+          "analyst": true,
+          "developer": true,
+          "fields": {
+            "bankAccountDetails": {},
+            "paymentMethodId": {
+              "label": "payment MethodId",
+              "analyst": true,
+              "developer": true
+            },
+            "fullNameOnCard": {
+              "label": "fullNameOn Card",
+              "analyst": true,
+              "developer": true
+            },
+            "paymentMethodType": {
+              "label": "payment Method Type",
+              "analyst": true,
+              "developer": true
+            },
+            "processor": {
+              "label": "Processor",
+              "analyst": true,
+              "developer": true
+            },
+            "creditCardDetail": {
+              "label": "credit Card Detail",
+              "analyst": true,
+              "developer": true,
+              "fields": {
+                "lastFourDigit": {
+                  "label": "last Four Digit",
+                  "analyst": true,
+                  "developer": true
+                },
+                "cardId": {
+                  "label": "card Id",
+                  "analyst": true,
+                  "developer": true
+                },
+                "cardToken": {
+                  "label": "cardToken",
+                  "analyst": true,
+                  "developer": true
+                },
+                "yearExpiryDate": {
+                  "label": "yearExpiryDate",
+                  "analyst": true,
+                  "developer": true
+                },
+                "monthExpiryDate": {
+                  "label": "monthExpiryDate",
+                  "analyst": true,
+                  "developer": true
+                }
+              }
+            }
+          }
+        },
+        "billingAddress": {
+          "label": "billingAddress",
+          "analyst": true,
+          "developer": true,
+          "fields": {
+            "firstName": {
+              "label": "firstName",
+              "analyst": true,
+              "developer": true
+            },
+            "lastName": {
+              "label": "lastName",
+              "analyst": true,
+              "developer": true
+            },
+            "country": {
+              "label": "country",
+              "analyst": true,
+              "developer": true
+            },
+            "phoneNumber": {
+              "label": "phoneNumber",
+              "analyst": true,
+              "developer": true
+            },
+            "city": {
+              "label": "city",
+              "analyst": true,
+              "developer": true
+            },
+            "postalCode": {
+              "label": "postalCode",
+              "analyst": true,
+              "developer": true
+            },
+            "addressLine1": {
+              "label": "addressLine1",
+              "analyst": true,
+              "developer": true
+            },
+            "addressLine2": {
+              "label": "addressLine2",
+              "analyst": true,
+              "developer": true
+            },
+            "state": {
+              "label": "state",
+              "analyst": true,
+              "developer": true
+            }
+          }
+        },
+        "additionalData": {
+          "label": "additionalData",
+          "analyst": true,
+          "developer": true,
+          "fields": {
+            "map": {
+              "label": "map",
+              "analyst": true,
+              "developer": true,
+              "fields": {}
+            }
+          }
+        },
+        "destinationId": {
+          "label": "destinationId",
+          "analyst": true,
+          "developer": true
+        },
+        "type": {
+          "label": "type",
+          "analyst": true,
+          "developer": true
+        }
+      }
+    }
+  }
+}

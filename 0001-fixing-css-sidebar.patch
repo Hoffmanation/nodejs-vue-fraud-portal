@@ -1,0 +1,71 @@
+From e61f3a71bb3c5f04bc27de914afb8ce1631254f8 Mon Sep 17 00:00:00 2001
+From: igormirkoviccc <igor.mirkovic@enetelsolutions.com>
+Date: Wed, 25 Mar 2020 10:43:05 +0100
+Subject: [PATCH] fixing css sidebar
+
+---
+ client/src/assets/style.css       | 8 ++++++++
+ client/src/components/SideBar.vue | 2 +-
+ client/src/views/EventsList.vue   | 8 +++++---
+ 3 files changed, 14 insertions(+), 4 deletions(-)
+
+diff --git a/client/src/assets/style.css b/client/src/assets/style.css
+index 48ad271..d299f15 100644
+--- a/client/src/assets/style.css
++++ b/client/src/assets/style.css
+@@ -91,6 +91,10 @@ input::-ms-input-placeholder {
+ }
+ 
+ .vue-portal-target{
++    position: fixed;
++    top: 0;
++    right: 0;
++    height: 100%;
+     display: inline-block;
+     float: right;
+     width: 31vw;
+@@ -621,4 +625,8 @@ tr{
+ 
+ .table tr.is-selected{
+     background-color: #545F78;
++}
++
++.event-list-detail-sidebar{
++    height: 100%;
+ }
+\ No newline at end of file
+diff --git a/client/src/components/SideBar.vue b/client/src/components/SideBar.vue
+index a335df5..ff49d45 100644
+--- a/client/src/components/SideBar.vue
++++ b/client/src/components/SideBar.vue
+@@ -86,7 +86,7 @@
+ 
+   .sidebar-event-detail{
+     width: 100%;
+-    height: 100vh;
++    height: 100%;
+     background-color: white;
+     padding-left: 10px;
+     overflow: auto;
+diff --git a/client/src/views/EventsList.vue b/client/src/views/EventsList.vue
+index cb2d627..be6ce09 100644
+--- a/client/src/views/EventsList.vue
++++ b/client/src/views/EventsList.vue
+@@ -247,9 +247,11 @@
+         </b-table-column>
+       </template>
+     </b-table>
+-    <portal to="home" v-if="!home">
+-    <SideBar :items="itemsDetail" v-on:changeHomeStatus="home = !home" :rootLevelItems="rootLevelItemsDetail"/>
+-    </portal>
++    <div class="event-list-detail-sidebar">
++      <portal to="home" v-if="!home">
++        <SideBar :items="itemsDetail" v-on:changeHomeStatus="home = !home" :rootLevelItems="rootLevelItemsDetail"/>
++      </portal>
++    </div>
+   </div>
+ </template>
+ <script>
+-- 
+2.21.1 (Apple Git-122.3)
+

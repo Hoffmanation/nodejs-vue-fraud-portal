@@ -1,0 +1,65 @@
+version: '3'
+services:
+  #backend server
+  xportal-node-server:
+    image: node:latest
+    restart: unless-stopped
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: xportal-node-server
+    hostname: xportal-node-server
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    environment:
+      DATABASE_HOST: 
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: 
+      DATABASE_NAME: xportal
+      NODE_ENV: development
+      ENVIRONMENT: development
+      PORT: 3000
+      SECRET: s0m3su3rs3cr3tp4ssw0rd
+      TOKEN_EXPIRES_IN: 1d
+      FRONT_APP_DOMAIN: http://localhost:6060/xportal
+      JSON_CONFIGURATION_FILE_PATH: ../jsonFile.json
+    volumes:
+      - ./server:/server
+      - /server/node_modules
+    networks:
+      - app-network
+    #    depends_on:
+    #      - pg-db-server
+    command: 'npm run dev'
+  #frontend server
+  xportal-vue-server:
+    container_name: xportal-vue-server
+    hostname: xportal-vue-server
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - xportal-node-server
+    links:
+      - xportal-node-server
+    volumes:
+      - ./client:/client
+      - /client/node_modules
+    expose:
+      - 6060
+    ports:
+      - 6060:6060
+    environment:
+      PORT: 6060
+      NODE_ENV: development
+      VUE_APP_API_URL: x-node-server
+    networks:
+      - app-network
+
+#networks
+networks:
+  app-network:
+    driver: bridge

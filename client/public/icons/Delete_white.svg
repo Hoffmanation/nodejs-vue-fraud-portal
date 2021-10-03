@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="22" viewBox="0 0 20 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="20" height="22" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="trash-2" clip-path="url(#clip-path)">
+    <path id="Path_450" data-name="Path 450" d="M3,6H21" transform="translate(-2 -1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_451" data-name="Path 451" d="M19,6V20a2,2,0,0,1-2,2H7a2,2,0,0,1-2-2V6M8,6V4a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2V6" transform="translate(-2 -1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="Line_16" data-name="Line 16" y2="6" transform="translate(8 10)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="Line_17" data-name="Line 17" y2="6" transform="translate(12 10)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

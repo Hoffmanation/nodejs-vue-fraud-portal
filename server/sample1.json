@@ -1,0 +1,45 @@
+{
+  "score": 1000,
+  "amount": 20,
+  "riskLevel": "VERY_HIGH",
+  "requestId": "bbe65d82-4644-4305-9a98-6873feaa8475",
+  "sessionId": "fca69d1bc720e446_1582103438207",
+  "destinationId": "99900022201",
+  "userId": "99900022201",
+  "deviceId": "515c62f3-2583-466b-9f56-8229f848fc41",
+  "currencyCode": "BRL",
+  "user": {
+    "phoneUser": "+5599900022201",
+    "isPhoneVerified": "VERIFIED",
+    "address": {},
+    "userId": "99900022201",
+    "email": "cccd@ccc.br",
+    "isEmailVerified": "VERIFIED"
+  },
+  "checkPointType": "TRANSACTION",
+  "transaction": {
+    "transactionType": "PURCHASE",
+    "amount": 20,
+    "time_stamp": 1582103763147,
+    "curType": "BRL",
+    "shippingAddress": {},
+    "authorizationResponse": {},
+    "payment": {
+      "bankAccountDetails": {},
+      "fullNameOnCard": "99900022201",
+      "processor": "",
+      "creditCardDetail": {}
+    },
+    "billingAddress": {},
+    "destinationId": "99900022201",
+    "type": "TRANSACTION",
+    "user": {
+      "phoneUser": "+5599900022201",
+      "isPhoneVerified": "VERIFIED",
+      "address": {},
+      "userId": "99900022201",
+      "email": "cccd@ccc.br",
+      "isEmailVerified": "VERIFIED"
+    }
+  }
+}

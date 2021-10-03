@@ -1,0 +1,918 @@
+{
+  "fields": {
+    "ip": {
+      "label": "IP",
+      "analyst": false,
+      "admin": false,
+      "developer": false
+    },
+    "userId": {
+      "label": "User ID",
+      "analyst": true,
+      "admin": true,
+      "developer": true
+    },
+    "checkPointType": {
+      "label": "Checkpoint",
+      "analyst": true,
+      "admin": true,
+      "developer": true,
+      "fieldType": "uppercase"
+    },
+    "score": {
+      "label": "Risk Score",
+      "analyst": true,
+      "admin": true,
+      "developer": true
+
+    },
+    "riskLevel": {
+      "label": "Severity",
+      "analyst": true,
+      "admin": true,
+      "developer": true,
+      "fieldType": "split"
+    },
+    "requestId": {
+      "label": "Request Id",
+      "analyst": true,
+      "admin": true,
+      "developer": true
+    },
+    "destinationId": {
+      "label": "Destination Id",
+      "analyst": false,
+      "admin": false,
+      "developer": false
+    },
+    "deviceId": {
+      "label": "Device Id",
+      "analyst": true,
+      "admin": true,
+      "developer": true
+    },
+    "currencyCode": {
+      "label": "Currency Code",
+      "analyst": false,
+      "admin": false,
+      "developer": false
+    },
+    "amount": {
+      "label": "Amount",
+      "analyst": false,
+      "admin": false,
+      "developer": false
+    },
+    "sessionId": {
+      "label": "Session Id",
+      "analyst": true,
+      "admin": true,
+      "developer": true
+    },
+    "increasingReasons": {
+      "label": "Increasing Reasons",
+      "analyst": true,
+      "admin": true,
+      "developer": true
+    },
+    "decreasingReasons": {
+      "label": "Decreasing Reasons",
+      "analyst": true,
+      "admin": true,
+      "developer": true
+    },
+    "paymentMethod": {
+      "label": "Payment Method Information",
+      "analyst": false,
+      "admin": false,
+      "developer": true,
+      "fields": {
+        "type": {
+          "label": "Payment Method Checkpoint Type",
+          "analyst": false,
+          "admin": false,
+          "developer": false
+        },
+        "server_timestamp": {
+          "label": "Server Timestamp",
+          "analyst": false,
+          "admin": false,
+          "developer": false,
+          "fieldType": "timestamp"
+        },
+        "checkpoint_type": {
+          "label": "Checkpoint",
+          "analyst": false,
+          "admin": false,
+          "developer": false,
+          "fieldType": "uppercase"
+        },
+        "user": {
+          "label": "Contact Information",
+          "analyst": false,
+          "admin": false,
+          "developer": false,
+          "fields": {
+            "user_id": {
+              "label": "User Id",
+              "analyst": false,
+              "admin": false,
+              "developer": false
+            },
+            "email": {
+              "label": "Email",
+              "analyst": false,
+              "admin": false,
+              "developer": false
+            },
+            "isEmailVerified": {
+              "label": "Email Verification",
+              "analyst": false,
+              "admin": false,
+              "developer": false,
+              "fieldType": "uppercase"
+            },
+            "phoneUser": {
+              "label": "Phone",
+              "analyst": false,
+              "admin": false,
+              "developer": false
+            },
+            "isPhoneUserVerified": {
+              "label": "Phone Verification",
+              "analyst": false,
+              "admin": false,
+              "developer": false,
+              "fieldType": "uppercase"
+            },
+            "user_address": {
+              "label": "Address",
+              "analyst": false,
+              "admin": false,
+              "developer": false,
+              "fields": {
+                "firstName": {
+                  "label": "First Name",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "lastName": {
+                  "label": "Last Name",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "country": {
+                  "label": "Country",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "phoneNumber": {
+                  "label": "Phone Number",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "city": {
+                  "label": "City",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "postalCode": {
+                  "label": "Postal Code",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "addressLine1": {
+                  "label": " Address Line 1",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "addressLine2": {
+                  "label": "Address Line 2",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "state": {
+                  "label": "State",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                }
+              }
+            }
+          }
+        },
+        "payment": {
+          "label": "",
+          "analyst": false,
+          "admin": false,
+          "developer": true,
+          "fields": {
+            "processor": {
+              "label": "Processor",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "paymentMethod": {
+              "label": "Payment Method Type",
+              "analyst": true,
+              "admin": true,
+              "developer": true,
+              "fieldType": "uppercase"
+            },
+            "paymentMethodId": {
+              "label": "Payment Method ID",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "fullNameOnCard": {
+              "label": "Full Name On Card",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "bankAccountDetails": {
+              "label": "Bank Account Details",
+              "analyst": true,
+              "admin": true,
+              "developer": true,
+              "fields": {}
+            },
+            "creditCardDetail": {
+              "label": "Credit Card Details",
+              "analyst": true,
+              "admin": true,
+              "developer": true,
+              "fields": {
+                "bin": {
+                  "label": "BIN",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                },
+                "lastFourDigit": {
+                  "label": "Card Last Four Digits",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                },
+                "cardId": {
+                  "label": "Card ID",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                },
+                "card_token": {
+                  "label": "Card Token",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                },
+                "yearExpiryDate": {
+                  "label": "Year Expiration Date",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                },
+                "monthExpiryDate": {
+                  "label": "Month Expiration Date",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                }
+              }
+            }
+          }
+        },
+        "billingAddress": {
+          "label": "Billing Address Information",
+          "analyst": true,
+          "admin": true,
+          "developer": true,
+          "fields": {
+            "firstName": {
+              "label": "First Name",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "lastName": {
+              "label": "Last Name",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "addressLine1": {
+              "label": " Address Line 1",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "addressLine2": {
+              "label": "Address Line 2",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "city": {
+              "label": "City",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "state": {
+              "label": "State",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "postalCode": {
+              "label": "Postal Code",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "country": {
+              "label": "Country",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "phoneNumber": {
+              "label": "Phone Number",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            }
+          }
+        }
+      }
+    },
+    "transaction": {
+      "label": "Transaction Information",
+      "analyst": true,
+      "admin": true,
+      "developer": true,
+      "fields": {
+        "transactionType": {
+          "label": "Transaction Type",
+          "analyst": true,
+          "admin": true,
+          "developer": true,
+          "fieldType": "uppercase"
+        },
+        "amount": {
+          "label": "Amount",
+          "analyst": true,
+          "admin": true,
+          "developer": true,
+          "fieldType": "amount"
+        },
+        "curType": {
+          "label": "Currency",
+          "analyst": true,
+          "admin": true,
+          "developer": true
+        },
+        "transactionUpdate": {
+          "label": "Transaction Update",
+          "analyst": false,
+          "admin": false,
+          "developer": false,
+          "fields": {
+            "requestID": {
+              "label": "Request Id",
+              "analyst": false,
+              "admin": false,
+              "developer": false
+            }
+          }
+        },
+        "user": {
+          "label": "User",
+          "analyst": false,
+          "admin": false,
+          "developer": false,
+          "fields": {
+            "phoneUser": {
+              "label": "Phone",
+              "analyst": false,
+              "admin": false,
+              "developer": false
+            },
+            "isPhoneUserVerified": {
+              "label": "Is Phone Verified",
+              "analyst": false,
+              "admin": false,
+              "developer": false
+            },
+            "user_id": {
+              "label": "User ID",
+              "analyst": false,
+              "admin": false,
+              "developer": false
+            },
+            "email": {
+              "label": "Email",
+              "analyst": false,
+              "admin": false,
+              "developer": false
+            },
+            "isEmailVerified": {
+              "label": "Email Verified",
+              "analyst": false,
+              "admin": false,
+              "developer": false,
+              "fieldType": "uppercase"
+            },
+            "user_address": {
+              "label": "User Address",
+              "analyst": false,
+              "admin": false,
+              "developer": false,
+              "fields": {
+                "firstName": {
+                  "label": "First Name",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "lastName": {
+                  "label": "Last Name",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "addressLine1": {
+                  "label": " Address Line 1",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "addressLine2": {
+                  "label": "Address Line 2",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "city": {
+                  "label": "City",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "state": {
+                  "label": "State",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "postalCode": {
+                  "label": "Postal Code",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "country": {
+                  "label": "Country",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                },
+                "phoneNumber": {
+                  "label": "Phone Number",
+                  "analyst": false,
+                  "admin": false,
+                  "developer": false
+                }
+              }
+            }
+          }
+        },
+        "timeStamp": {
+          "label": "Timestamp (1)",
+          "analyst": false,
+          "admin": false,
+          "developer": false,
+          "fieldType": "timestamp"
+        },
+        "server_timestamp": {
+          "label": "Timestamp",
+          "analyst": true,
+          "admin": true,
+          "developer": true,
+          "fieldType": "timestamp"
+        },
+        "checkpoint_type": {
+          "label": "Checkpoint",
+          "analyst": false,
+          "admin": false,
+          "developer": false,
+          "fieldType": "uppercase"
+        },
+        "destinationId": {
+          "label": "Destination ID",
+          "analyst": true,
+          "admin": true,
+          "developer": true
+        },
+        "payment": {
+          "label": "Payment Method Information",
+          "analyst": false,
+          "admin": false,
+          "developer": true,
+          "fields": {
+            "bankAccountDetails": {},
+            "paymentMethodId": {
+              "label": "Payment Method",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "fullNameOnCard": {
+              "label": "Full Name on Card",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "paymentMethod": {
+              "label": "Payment Method Type",
+              "analyst": true,
+              "admin": true,
+              "developer": true,
+              "fieldType": "uppercase"
+            },
+            "processor": {
+              "label": "Processor",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "creditCardDetail": {
+              "label": "Credit Card Details",
+              "analyst": true,
+              "admin": true,
+              "developer": true,
+              "fields": {
+                "bin": {
+                  "label": "BIN",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                },
+                "lastFourDigit": {
+                  "label": "Last Four Digits",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                },
+                "cardId": {
+                  "label": "Card ID",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                },
+                "card_token": {
+                  "label": "Card Token",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                },
+                "yearExpiryDate": {
+                  "label": "Expiration Year",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                },
+                "monthExpiryDate": {
+                  "label": "Expiration Month",
+                  "analyst": true,
+                  "admin": true,
+                  "developer": true
+                }
+              }
+            }
+          }
+        },
+        "billingAddress": {
+          "label": "Billing Address Information",
+          "analyst": true,
+          "admin": true,
+          "developer": true,
+          "fields": {
+            "firstName": {
+              "label": "First Name",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "lastName": {
+              "label": "Last Name",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "addressLine1": {
+              "label": " Address Line 1",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "addressLine2": {
+              "label": "Address Line 2",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "city": {
+              "label": "City",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "state": {
+              "label": "State",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "postalCode": {
+              "label": "Postal Code",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "country": {
+              "label": "Country",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "phoneNumber": {
+              "label": "Phone Number",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            }
+          }
+        },
+        "authorizationResponse": {
+          "label": "Authorization Response",
+          "analyst": false,
+          "admin": false,
+          "developer": true,
+          "fields": {
+            "verificationStatus": {
+              "label": "Verification Status",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "aVSResultCode": {
+              "label": "aVSResult Code",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "acquirerResponseCode": {
+              "label": "Acquirer Response Code",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "acquirerResponseMessage": {
+              "label": "Acquirer Response Message",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "declineReasonCode": {
+              "label": "Decline Reason Code",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "declineReasonMessage": {
+              "label": "Decline Reason Message",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "threeDSResponseStatus": {
+              "label": "3DS Response Status",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "threeDSResponseECI": {
+              "label": "3DS Response ECI",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            },
+            "threeDSResponseEnrolled": {
+              "label": "3DS Response Enrolled",
+              "analyst": false,
+              "admin": false,
+              "developer": true
+            }
+          }
+        },
+        "shippingAddress": {
+          "label": "Shipping Address Information",
+          "analyst": true,
+          "admin": true,
+          "developer": true,
+          "fields": {
+            "firstName": {
+              "label": "First Name",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "lastName": {
+              "label": "Last Name",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "addressLine1": {
+              "label": " Address Line 1",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "addressLine2": {
+              "label": "Address Line 2",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "city": {
+              "label": "City",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "state": {
+              "label": "State",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "postalCode": {
+              "label": "Postal Code",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "country": {
+              "label": "Country",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "phoneNumber": {
+              "label": "Phone Number",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            }
+          }
+        },
+        "additionalData": {
+          "label": "additionalData",
+          "analyst": false,
+          "admin": false,
+          "developer": true,
+          "fields": {
+            "map": {
+              "label": "map",
+              "analyst": true,
+              "admin": true,
+              "developer": true,
+              "fields": {}
+            }
+          }
+        },
+        "type": {
+          "label": "Type",
+          "analyst": false,
+          "admin": false,
+          "developer": false
+        }
+      }
+    },
+    "user": {
+      "label": "User Information",
+      "analyst": true,
+      "admin": true,
+      "developer": true,
+      "fields": {
+        "user_id": {
+          "label": "User Id",
+          "analyst": false,
+          "admin": false,
+          "developer": false
+        },
+        "email": {
+          "label": "Email",
+          "analyst": true,
+          "admin": true,
+          "developer": true
+        },
+        "isEmailVerified": {
+          "label": "Email Verification",
+          "analyst": true,
+          "admin": true,
+          "developer": true,
+          "fieldType": "uppercase"
+        },
+        "phoneUser": {
+          "label": "Phone",
+          "analyst": true,
+          "admin": true,
+          "developer": true
+        },
+        "isPhoneUserVerified": {
+          "label": "Phone Verification",
+          "analyst": true,
+          "admin": true,
+          "developer": true,
+          "fieldType": "uppercase"
+        },
+        "user_address": {
+          "label": "User Address",
+          "analyst": true,
+          "admin": true,
+          "developer": true,
+          "fields": {
+            "firstName": {
+              "label": "First Name",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "lastName": {
+              "label": "Last Name",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "addressLine1": {
+              "label": " Address Line 1",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "addressLine2": {
+              "label": "Address Line 2",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "city": {
+              "label": "City",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "state": {
+              "label": "State",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "postalCode": {
+              "label": "Postal Code",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "country": {
+              "label": "Country",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            },
+            "phoneNumber": {
+              "label": "Phone Number",
+              "analyst": true,
+              "admin": true,
+              "developer": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

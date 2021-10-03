@@ -1,0 +1,2 @@
+ALTER TABLE risk_events ADD CONSTRAINT riskeventspkey PRIMARY KEY (userid, requestid);
+CREATE UNIQUE INDEX riskeventsindex ON risk_events USING btree (severity, score, requestid, userid, checkpoint, amount);
